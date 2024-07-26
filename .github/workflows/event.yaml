@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is testing out github actions
 on: [push]
 jobs:
   Explore-Gihub-actoions:
-  run-on: ubuntu-latest
-  steps:
-    - run: echo "the job is automatically triggered by a  ${{github.event_name}}
-    - run: echo "the job is now running on a ${{ runner.os }}
+    run-on: ubuntu-latest
+    steps:
+      - run: echo "the job is automatically triggered by a  ${{github.event_name}}
+      - run: echo "the job is now running on a ${{ runner.os }}
