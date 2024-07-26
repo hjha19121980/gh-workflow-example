@@ -5,5 +5,5 @@ jobs:
   Explore-Gihub-actoions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "the job is automatically triggered by a  ${{github.event_name}}
-      - run: echo "the job is now running on a ${{ runner.os }}
+      - run: echo "the job is automatically triggered by a  ${{github.event_name}} event"
+      - run: echo "the job is now running on a ${{ runner.os }} server"
