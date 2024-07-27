@@ -1,9 +1,13 @@
-name: Github Action demo
+name: print github action environment variable
 run-name: ${{ github.actor }} is testing out github actions
 on: [push]
 jobs:
   Explore-Gihub-actoions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "the job is automatically triggered by a  ${{github.event_name}} event"
-      - run: echo "the job is now running on a ${{ runner.os }} server"
+      - run: |
+          echo "Event Name:  $GITHUB_EVENT_NAME"
+          echo "Actor name:  $GITHUB_ACTOR"
+          echo "Repo Name:   $GITHUB_REPOSITORY"
+          echo "SHA name:    $GITHUB_SHA"
+      
