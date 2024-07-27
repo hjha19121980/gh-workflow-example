@@ -10,4 +10,5 @@ jobs:
           echo "Actor name:  $GITHUB_ACTOR"
           echo "Repo Name:   $GITHUB_REPOSITORY"
           echo "SHA name:    $GITHUB_SHA"
+          echo "Token Name:  $GITHUB_TOKEN"
       
